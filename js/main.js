@@ -7,7 +7,7 @@
  let menuToggle = new TimelineMax({paused:true, reversed:true});
  let slideDown = $(".menu-container-mobile");
  let listItems = $(".list-items-mobile > li");
-  
+
 
 
 
@@ -36,8 +36,19 @@
     }, .1);
   
   menuIcon.click(function () {
-    menuToggle.reversed() ? menuToggle.restart() : menuToggle.reverse();
+    menuToggle.reversed() ? menuToggle.restart(): menuToggle.reverse() ;
   });
+
+function myFunction (){
+  menuToggle.reverse();
+  console.log("test");
+}
+
+  document.getElementById("test").addEventListener("click", myFunction);
+  document.getElementById("test2").addEventListener("click", myFunction);
+
+
+
 
  
 
