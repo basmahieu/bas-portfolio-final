@@ -4,7 +4,7 @@
 @import 'btn';
 @import 'speech_balloon';
 @import 'about';
-@import 'portfolio';
+@import 'portfolio-detail-pages';
 
 /* ==========================================================================
    Defaults
@@ -81,6 +81,13 @@ body {
 .nav-links-desktop li a:hover {
   color: $accentColor;
   transition: all 0.2s ease-out;
+}
+
+.nav-links-desktop li a:active {
+  color: red;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 /* ==========================================================================
@@ -184,8 +191,8 @@ body {
   z-index: -999;
 }
 
-.btn-question h2:hover {
-  cursor: pointer;
+.btn-question a:hover {
+  color: #efeff4;
 }
 
 .question-style {
@@ -373,6 +380,7 @@ body {
   }
 
   .nav-menu {
+    color: #8d8d8d;
     z-index: 5;
     position: absolute;
     height: 10vh;
@@ -464,7 +472,7 @@ body {
    ========================================================================== */
 
 @media screen and (max-width: 480px) {
-  /* Nav - Mobile */
+  /* Hero - Mobile small */
 
   .hero-container h1 {
     font-size: 40px;
@@ -477,5 +485,46 @@ body {
   .hero-container-right img {
     width: 100%;
     height: auto;
+  }
+
+  /* Badass - Mobile small */
+  .badass-section {
+    margin-bottom: 96px;
+    min-height: 320px;
+  }
+
+  .badass-section h2 {
+    font-size: 32px;
+  }
+
+  /* Portfolio - Mobile small */
+
+  .portfolio-title {
+    margin-bottom: 16px;
+  }
+
+  .portfolio-container h2 {
+    font-size: 32px;
+  }
+
+  .portfolio-container h6 {
+    font-size: 14px;
+  }
+
+  /* Question - Mobile small */
+  .question {
+    margin-top: 40px;
+
+    margin-bottom: 56px;
+
+    height: 520px;
+  }
+
+  /* Moving text - Mobile small */
+
+  .marquee {
+    font-size: 18px;
+    height: 160px;
+    padding-top: 56px;
   }
 }
