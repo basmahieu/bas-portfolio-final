@@ -2,6 +2,7 @@
 @import 'utilities';
 @import 'character-styles';
 @import 'btn';
+@import 'speech_balloon';
 
 /* ==========================================================================
    Defaults
@@ -16,12 +17,12 @@
 }
 
 .background-grained {
-  background-image: url(https://i.stack.imgur.com/sIIwU.gif);
   height: 100vh;
+
+  background-image: url(https://i.stack.imgur.com/sIIwU.gif);
   opacity: 0.05;
   position: absolute;
   z-index: -2;
-
   top: 0;
   left: 0;
   right: 0;
@@ -125,6 +126,188 @@ body {
 }
 
 /* ==========================================================================
+   Portfolio - Section
+   ========================================================================== */
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 32px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 auto;
+}
+
+.portfolio-intro {
+  margin-bottom: 56px;
+  max-width: 600px;
+}
+
+.portfolio-container h2 {
+  margin-top: 24px;
+}
+
+.portfolio-container h6 {
+  margin-top: 16px;
+  margin-bottom: 72px;
+}
+
+/* ==========================================================================
+   Question - Section
+   ========================================================================== */
+
+.question {
+  margin: 128px 0;
+  height: 760px;
+  color: #fff;
+  background-color: $mainDark;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: -999;
+}
+
+.btn-question h2:hover {
+  cursor: pointer;
+}
+
+.question-style {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ==========================================================================
+   Moving Text - Section
+   ========================================================================== */
+
+.moving-text {
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 96px;
+}
+
+.marquee {
+  font-size: 24px;
+  text-transform: uppercase;
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 200px;
+  overflow-x: hidden;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 32s linear infinite;
+}
+
+.content-moving-text {
+  margin-top: 12px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ==========================================================================
+   Thanks - Section
+   ========================================================================== */
+
+.thanks-section {
+  text-align: center;
+  margin-bottom: 128px;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* ==========================================================================
+   Footer- Section
+   ========================================================================== */
+
+.footer {
+  background-color: $mainDark;
+  color: #fff;
+  margin-top: 96px;
+  padding-top: 96px;
+  padding-bottom: 56px;
+}
+.footer h2 {
+  margin-bottom: 8px;
+}
+
+.footer p {
+  max-width: 500px;
+}
+
+.fab {
+  margin-top: 40px;
+  padding-right: 16px;
+}
+
+.fab:hover {
+  transition: all 0.2s ease-out;
+  transform: scale(1.4);
+  cursor: pointer;
+  color: #c7c7cc;
+}
+
+.far:hover {
+  transition: all 0.2s ease-out;
+  transform: scale(1.4);
+  cursor: pointer;
+  color: #c7c7cc;
+}
+
+.far {
+  padding-right: 16px;
+}
+
+.line {
+  margin-top: 56px;
+  margin-bottom: 24px;
+}
+
+.footer-mail {
+  color: #fff;
+}
+
+.footer-mail:hover {
+  transition: all 0.2s ease-out;
+  color: #c7c7cc;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* ==========================================================================
    Screens under 900
    ========================================================================== */
 @media screen and (max-width: 900px) {
@@ -157,7 +340,6 @@ body {
 
   /* Under 900 - Badass section */
   .badass-section h2 {
-    margin-top: 56px;
     font-size: 32pt;
   }
 }
@@ -246,5 +428,16 @@ body {
     max-width: 90%;
     height: auto;
     float: left;
+  }
+
+  /* Mobile - Badass */
+
+  /* Mobile - Portfolio */
+
+  .portfolio-container {
+    grid-template-columns: 1fr;
+    height: 90%;
+    margin-left: 0;
+    justify-items: left;
   }
 }
