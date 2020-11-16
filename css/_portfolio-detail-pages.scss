@@ -2,12 +2,17 @@
   height: 120px;
 }
 
+.portfolio-page h6 {
+  margin-top: -16px;
+  margin-bottom: 16px;
+}
+
 .portfolio-page p {
   max-width: 748px;
 }
 
 .portfolio-detail {
-  margin-top: 96px;
+  margin-top: 56px;
 }
 
 @media screen and (max-width: 480px) {
