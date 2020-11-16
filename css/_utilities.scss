@@ -27,9 +27,21 @@
   margin: 0 auto;
 }
 
-@media screen and (max-width: 480px) {
-  /* Nav - Mobile */
-  .container {
-    padding: 0 16px;
-  }
+.work-imgs {
+  margin: 24px auto;
+}
+
+.hover .img {
+  overflow: hidden;
+  transform: rotate(0.0001deg);
+  transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.hover img {
+  transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.hover:hover .img {
+  transform: scale(0.95);
+}
+.hover:hover img {
+  transform: scale(1.15);
 }

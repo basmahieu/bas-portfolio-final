@@ -3,6 +3,8 @@
 @import 'character-styles';
 @import 'btn';
 @import 'speech_balloon';
+@import 'about';
+@import 'portfolio';
 
 /* ==========================================================================
    Defaults
@@ -152,6 +154,18 @@ body {
 .portfolio-container h6 {
   margin-top: 16px;
   margin-bottom: 72px;
+}
+
+.portfolio-container a {
+  color: $mainDark;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.2s ease-out;
+}
+
+.portfolio-container a:hover {
+  color: $accentColor;
 }
 
 /* ==========================================================================
@@ -439,5 +453,29 @@ body {
     height: 90%;
     margin-left: 0;
     justify-items: left;
+  }
+  .portfolio-container h2 {
+    font-size: 40px;
+  }
+}
+
+/* ==========================================================================
+   Mobile - Small
+   ========================================================================== */
+
+@media screen and (max-width: 480px) {
+  /* Nav - Mobile */
+
+  .hero-container h1 {
+    font-size: 40px;
+  }
+
+  .hero-container p {
+    font-size: 20px;
+  }
+
+  .hero-container-right img {
+    width: 100%;
+    height: auto;
   }
 }

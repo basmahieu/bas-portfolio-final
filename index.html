@@ -46,10 +46,10 @@
       <div class="nav-menu-desktop">
         <nav>
           <ul class="nav-links-desktop">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="#anchor-link-portfolio">Work</a></li>
+            <li><a href="#anchor-link-contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -64,10 +64,14 @@
       <nav class="menu-container-mobile">
         <div class="menu-content-mobile center">
           <ul class="list-items-mobile">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#anchor-link-portfolio">Work</a></li>
+            <li>
+              <a onclick="myFunction()" href="index.html#anchor-link-contact"
+                >Contact</a
+              >
+            </li>
           </ul>
         </div>
       </nav>
@@ -112,7 +116,7 @@
     </section>
 
     <!-- Portfolio -->
-    <div id="anchor-link-menu"></div>
+    <div id="anchor-link-portfolio"></div>
     <section class="container">
       <h1 data-aos="fade-up">Projects</h1>
 
@@ -124,51 +128,68 @@
       <div class="portfolio-container">
         <div class="portfolio-container-left">
           <!-- Portfolio Card 1 -->
-          <div data-aos="fade-up">
-            <img
-              src="img/portfolio_image_1.png"
-              alt="Mountains"
-              style="width: 100%"
-            />
-          </div>
-          <h2 data-aos="fade-up">Portfolio</h2>
+          <a class="hover" href="portfolio.html">
+            <div class="img">
+              <img
+                src="img/portfolio_image_1.svg"
+                alt="Mountains"
+                style="width: 100%"
+                data-aos="fade-up"
+              /></div
+          ></a>
+          <a href="portfolio.html">
+            <h2 data-aos="fade-up">Portfolio</h2>
+          </a>
           <h6 data-aos="fade-up">Development / design</h6>
 
           <!-- End Portfolio Card 1 -->
           <!-- Portfolio Card 2 -->
-          <div data-aos="fade-up">
-            <img
-              src="img/portfolio_image_2.png"
-              alt="Mountains"
-              style="width: 100%"
-            />
-          </div>
-          <h2 data-aos="fade-up">Portfolio</h2>
-          <h6 data-aos="fade-up">Development / design</h6>
+          <a class="hover" href="#">
+            <div class="img">
+              <img
+                src="img/portfolio_image_3.jpg"
+                alt="Mountains"
+                style="width: 100%"
+                data-aos="fade-up"
+              /></div
+          ></a>
+          <a href="#">
+            <h2 data-aos="fade-up">Present</h2>
+          </a>
+          <h6 data-aos="fade-up">Design</h6>
           <!-- End Portfolio Card 2 -->
         </div>
         <div class="portfolio-container-right">
           <!-- Portfolio Card 3 -->
-          <div data-aos="fade-up">
-            <img
-              src="img/portfolio_image_2.png"
-              alt="Mountains"
-              style="width: 100%"
-            />
-          </div>
-          <h2 data-aos="fade-up">Portfolio</h2>
-          <h6 data-aos="fade-up">Development / design</h6>
+          <a class="hover" href="#">
+            <div class="img">
+              <img
+                src="img/portfolio_image_2.jpg"
+                alt="Mountains"
+                style="width: 100%"
+                data-aos="fade-up"
+              /></div
+          ></a>
+          <a href="#">
+            <h2 data-aos="fade-up">Gum</h2>
+          </a>
+          <h6 data-aos="fade-up">Design</h6>
           <!-- End Portfolio Card 3 -->
+
           <!-- Portfolio Card 4 -->
-          <div data-aos="fade-up">
-            <img
-              src="img/portfolio_image_1.png"
-              alt="Mountains"
-              style="width: 100%"
-            />
-          </div>
-          <h2 data-aos="fade-up">Portfolio</h2>
-          <h6 data-aos="fade-up">Development / design</h6>
+          <a class="hover" href="#">
+            <div class="img">
+              <img
+                src="img/portfolio_image_4.jpg"
+                alt="Mountains"
+                style="width: 100%"
+                data-aos="fade-up"
+              /></div
+          ></a>
+          <a href="#">
+            <h2 data-aos="fade-up">React project</h2>
+          </a>
+          <h6 data-aos="fade-up">Coming soon</h6>
           <!-- End Portfolio Card 4 -->
         </div>
       </div>
@@ -238,32 +259,34 @@
     </div>
 
     <!-- Footer -->
-    <div id="contact"></div>
+    <div id="anchor-link-contact"></div>
 
-    <div class="footer" data-aos="fade-up">
-      <div class="container footer-container">
-        <h2 data-aos="fade-up">Contact.</h2>
-        <p data-aos="fade-up">
-          I&#39;m currently looking for an internship at an agency for this
-          winter, so feel free to drop me a line at
-          <a class="footer-mail" href="mailto: bas@portfolio.be">
-            bas@portfolio.be</a
-          >
-        </p>
-        <div data-aos="fade-up">
+    <div data-aos="fade-up ">
+      <div class="footer">
+        <div class="container footer-container">
+          <h2>Contact.</h2>
+          <p>
+            I&#39;m currently looking for an internship at an agency for this
+            winter, so feel free to drop me a line at
+            <a class="footer-mail" href="mailto: bas@portfolio.be">
+              bas@portfolio.be</a
+            >
+          </p>
           <i class="fab fa-github"></i>
           <i class="fab fa-linkedin-in"></i>
           <i class="far fa-paper-plane"></i>
           <i class="fab fa-facebook-f"></i>
           <i class="fab fa-instagram"></i>
           <hr class="line" />
-        </div>
-        <div class="copyright" data-aos="fade-up">
-          <h4>Bas Mahieu</h4>
-          <h4>©2020</h4>
+
+          <div class="copyright">
+            <h4>Bas Mahieu</h4>
+            <h4>©2020</h4>
+          </div>
         </div>
       </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 
