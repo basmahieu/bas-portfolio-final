@@ -1,5 +1,7 @@
 @import 'colors';
 @import 'utilities';
+@import 'character-styles';
+@import 'btn';
 
 /* ==========================================================================
    Defaults
@@ -18,6 +20,8 @@
   height: 100vh;
   opacity: 0.05;
   position: absolute;
+  z-index: -2;
+
   top: 0;
   left: 0;
   right: 0;
@@ -77,22 +81,99 @@ body {
 }
 
 /* ==========================================================================
+   Hero Section
+   ========================================================================== */
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 56px;
+  margin: 0 auto;
+  height: 82vh;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 auto;
+}
+
+.hero-container-left .btn-main {
+  margin-top: 24px;
+}
+
+.hero-btn-section {
+  margin-top: 24px;
+}
+
+.hero-container-right img {
+  max-width: 90%;
+  height: auto;
+  float: right;
+}
+
+/* ==========================================================================
+   Badass - Section
+   ========================================================================== */
+
+.badass-section {
+  background-color: $mainDark;
+  color: #fff;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 128px;
+}
+
+/* ==========================================================================
+   Screens under 900
+   ========================================================================== */
+@media screen and (max-width: 900px) {
+  /* Under 900 - Hero section */
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    height: 90%;
+    margin-top: 96px;
+    margin-bottom: 56px;
+  }
+
+  .hero-container-left {
+    width: 100%;
+  }
+
+  .hero-container-left p {
+    max-width: 768px;
+  }
+
+  .hero-container-right {
+    width: 100%;
+  }
+
+  .hero-container-right img {
+    max-width: 70%;
+    height: auto;
+    float: left;
+  }
+
+  /* Under 900 - Badass section */
+  .badass-section h2 {
+    margin-top: 56px;
+    font-size: 32pt;
+  }
+}
+
+/* ==========================================================================
    Tablet and under
    ========================================================================== */
 
 @media screen and (max-width: 768px) {
-  /* -------------------------------
-   Tablet and under
-   ------------------------------- */
+  /* Mobile - Navigation */
   .nav-menu-mobile {
     display: block;
   }
 
   .nav-menu-desktop {
     display: none;
-  }
-  .nav-menu h4 {
-    color: white;
   }
 
   .nav-menu {
@@ -146,5 +227,24 @@ body {
     margin-bottom: 20px;
     font-weight: bold;
     color: #efefef;
+  }
+
+  /* Mobile - Hero section */
+  .hero-container-left {
+    margin-top: 96px;
+  }
+
+  .hero-container-left h1 {
+    font-size: 48px;
+  }
+
+  .hero-container-left p {
+    font-size: 22px;
+  }
+
+  .hero-container-right img {
+    max-width: 90%;
+    height: auto;
+    float: left;
   }
 }

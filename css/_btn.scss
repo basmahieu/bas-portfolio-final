@@ -1,0 +1,129 @@
+/* Buttons */
+
+@import 'colors';
+
+$underlineHeight: 12%;
+$underlineHeightQuestion: 8%;
+
+.btn-main {
+  font-size: 24px;
+  font-weight: 600;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  padding: 0 1px;
+  transition: color ease 0.3s;
+  padding-bottom: 8px;
+  ba &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: $mainDark;
+    z-index: -1;
+    height: $underlineHeight;
+  }
+
+  &::before {
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    transition: width ease 0.4s;
+  }
+
+  &::after {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transition: all ease 0.6s;
+  }
+
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+
+    &::after {
+      left: 100%;
+      width: 0%;
+      transition: all ease 0.2s;
+    }
+  }
+}
+
+.btn-main:hover {
+  color: $accentColor;
+
+  &::before,
+  &::after {
+    background-color: $accentColor;
+    height: $underlineHeight;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btn-main {
+    font-size: 20px;
+  }
+}
+
+.btn-question {
+  font-weight: 600;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  color: $mainLight;
+  padding: 0 1px;
+  transition: color ease 0.3s;
+  padding-bottom: 16px;
+  ba &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: $mainLight;
+    z-index: 1;
+    height: $underlineHeightQuestion;
+  }
+
+  &::before {
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    transition: width ease 0.4s;
+  }
+
+  &::after {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transition: all ease 0.6s;
+  }
+
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+
+    &::after {
+      left: 100%;
+      width: 0%;
+      transition: all ease 0.2s;
+    }
+  }
+}
+
+.btn-question:hover {
+  color: #c7c7cc;
+
+  &::before,
+  &::after {
+    background-color: #c7c7cc;
+    height: $underlineHeight;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btn-question {
+    font-size: 20px;
+  }
+}

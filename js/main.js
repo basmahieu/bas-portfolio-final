@@ -3,11 +3,15 @@
    Mobile - Navigation
    ========================================================================== */
 
-  var menuIcon = $(".nav-menu");  
-  var menuToggle = new TimelineMax({paused:true, reversed:true});
-  var slideDown = $(".menu-container-mobile");
-  var listItems = $(".list-items-mobile > li");
+ let menuIcon = $(".nav-menu");  
+ let menuToggle = new TimelineMax({paused:true, reversed:true});
+ let slideDown = $(".menu-container-mobile");
+ let listItems = $(".list-items-mobile > li");
   
+
+
+
+
   TweenMax.set(slideDown, {
         y: '-100%'
     });
@@ -35,6 +39,7 @@
     menuToggle.reversed() ? menuToggle.restart() : menuToggle.reverse();
   });
 
+  
 
  /* ==========================================================================
    Smooth Scroll
