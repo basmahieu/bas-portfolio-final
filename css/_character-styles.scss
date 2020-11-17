@@ -1,25 +1,25 @@
 h1 {
-  font-size: 60px;
+  font-size: 3.75em;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 3em;
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 2em;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 1.5em;
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 1.25em;
 }
 
 h6 {
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 ul {
@@ -38,28 +38,28 @@ p {
 
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 48px;
+    font-size: 3em;
   }
   h2 {
-    font-size: 40px;
+    font-size: 2.5em;
   }
 
   h3 {
-    font-size: 32px;
+    font-size: 2em;
   }
 
   h4 {
-    font-size: 24px;
+    font-size: 1.5em;
   }
 
   h5 {
-    font-size: 20px;
+    font-size: 1.25em;
   }
 
   h6 {
-    font-size: 18px;
+    font-size: 1.125em;
   }
   p {
-    font-size: 20px;
+    font-size: 1.25em;
   }
 }

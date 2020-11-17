@@ -6,7 +6,7 @@ $underlineHeight: 12%;
 $underlineHeightQuestion: 8%;
 
 .btn-main {
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: 600;
   position: relative;
   text-decoration: none;
@@ -63,7 +63,7 @@ $underlineHeightQuestion: 8%;
 
 @media screen and (max-width: 768px) {
   .btn-main {
-    font-size: 20px;
+    font-size: 1.25em;
   }
 }
 
@@ -124,6 +124,6 @@ $underlineHeightQuestion: 8%;
 
 @media screen and (max-width: 768px) {
   .btn-question {
-    font-size: 20px;
+    font-size: 1.25em;
   }
 }

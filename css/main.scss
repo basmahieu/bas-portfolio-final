@@ -18,27 +18,28 @@
   -webkit-text-size-adjust: 100%;
 }
 
-.background-grained {
-  height: 100vh;
-
-  background-image: url(https://i.stack.imgur.com/sIIwU.gif);
-  opacity: 0.05;
-  position: absolute;
-  z-index: -2;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
   font-family: 'Nunito Sans', sans-serif;
   color: $mainDark;
   background-color: $mainLight;
+  height: 100%;
+}
+
+.background-grained {
+  height: 100%;
+  background-image: url(https://i.stack.imgur.com/sIIwU.gif);
+  opacity: 0.08;
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 /* ==========================================================================
@@ -74,7 +75,7 @@ body {
 .nav-links-desktop li a {
   color: $mainDark;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 700;
 }
 
@@ -86,7 +87,7 @@ body {
 .nav-links-desktop li a:active {
   color: red;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 700;
 }
 
@@ -166,7 +167,7 @@ body {
 .portfolio-container a {
   color: $mainDark;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 700;
   transition: all 0.2s ease-out;
 }
@@ -181,7 +182,7 @@ body {
 
 .question {
   margin: 128px 0;
-  height: 760px;
+  height: 560px;
   color: #fff;
   background-color: $mainDark;
   text-align: center;
@@ -213,7 +214,7 @@ body {
 }
 
 .marquee {
-  font-size: 24px;
+  font-size: 1.5em;
   text-transform: uppercase;
   position: relative;
   width: 100vw;
@@ -435,7 +436,7 @@ body {
 
   .menu-container-mobile li {
     list-style-type: none;
-    font-size: 50px;
+    font-size: 3em;
     margin-bottom: 20px;
     font-weight: bold;
     color: #efefef;
@@ -447,11 +448,11 @@ body {
   }
 
   .hero-container-left h1 {
-    font-size: 48px;
+    font-size: 3em;
   }
 
   .hero-container-left p {
-    font-size: 22px;
+    font-size: 1.3em;
   }
 
   .hero-container-right img {
@@ -471,7 +472,7 @@ body {
     justify-items: left;
   }
   .portfolio-container h2 {
-    font-size: 40px;
+    font-size: 2.5em;
   }
 }
 
@@ -483,11 +484,11 @@ body {
   /* Hero - Mobile small */
 
   .hero-container h1 {
-    font-size: 40px;
+    font-size: 2.5em;
   }
 
   .hero-container p {
-    font-size: 20px;
+    font-size: 1.25em;
   }
 
   .hero-container-right img {
@@ -502,7 +503,7 @@ body {
   }
 
   .badass-section h2 {
-    font-size: 32px;
+    font-size: 2em;
   }
 
   /* Portfolio - Mobile small */
@@ -512,11 +513,11 @@ body {
   }
 
   .portfolio-container h2 {
-    font-size: 32px;
+    font-size: 2em;
   }
 
   .portfolio-container h6 {
-    font-size: 14px;
+    font-size: 0.875em;
   }
 
   /* Question - Mobile small */
@@ -529,7 +530,7 @@ body {
   /* Moving text - Mobile small */
 
   .marquee {
-    font-size: 18px;
+    font-size: 1.125em;
     height: 160px;
     padding-top: 56px;
   }
