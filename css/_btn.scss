@@ -81,7 +81,7 @@ $underlineHeightQuestion: 8%;
     content: '';
     position: absolute;
     background-color: $mainLight;
-    z-index: 1;
+    z-index: 0;
     height: $underlineHeightQuestion;
   }
 

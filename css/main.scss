@@ -284,6 +284,10 @@ body {
   max-width: 500px;
 }
 
+.footer a {
+  color: $mainLight;
+}
+
 .fab {
   margin-top: 40px;
   padding-right: 16px;
@@ -305,6 +309,10 @@ body {
 
 .far {
   padding-right: 16px;
+}
+
+.socials a:active {
+  color: red;
 }
 
 .line {
@@ -514,9 +522,7 @@ body {
   /* Question - Mobile small */
   .question {
     margin-top: 40px;
-
     margin-bottom: 56px;
-
     height: 520px;
   }
 

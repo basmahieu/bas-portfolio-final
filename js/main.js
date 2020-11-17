@@ -39,13 +39,13 @@
     menuToggle.reversed() ? menuToggle.restart(): menuToggle.reverse() ;
   });
 
-function myFunction (){
+function closeMenu (){
   menuToggle.reverse();
-  console.log("test");
+  console.log("menu-closed");
 }
 
-  document.getElementById("test").addEventListener("click", myFunction);
-  document.getElementById("test2").addEventListener("click", myFunction);
+  document.getElementById("close-menu-1").addEventListener("click", closeMenu);
+  document.getElementById("close-menu-2").addEventListener("click", closeMenu);
 
 
 
