@@ -8,10 +8,6 @@
  let slideDown = $(".menu-container-mobile");
  let listItems = $(".list-items-mobile > li");
 
-
-
-
-
   TweenMax.set(slideDown, {
         y: '-100%'
     });
@@ -64,3 +60,20 @@ window.scroll({
 
 
 
+ /* ==========================================================================
+   Tab Change
+   ========================================================================== */
+$(function() {
+	// Get page title
+  	var pageTitle = $("title").text();
+
+	// Change page title on blur
+	$(window).blur(function() {
+	  $("title").text("Bas | I miss you! ♥");
+	});
+
+	// Change page title back on focus
+	$(window).focus(function() {
+	  $("title").text(pageTitle);
+	});
+});
