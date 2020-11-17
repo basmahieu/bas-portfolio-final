@@ -324,11 +324,9 @@
       AOS.init({
         duration: 1500,
         once: true,
-        disable: function () {
-          var maxWidth = 800;
-          return window.innerWidth < maxWidth;
-        },
       });
+
+      AOS.init({});
     </script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
