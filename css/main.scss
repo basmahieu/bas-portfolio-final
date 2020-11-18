@@ -182,7 +182,6 @@ body {
 
 .question {
   margin: 128px 0;
-  height: 560px;
   color: #fff;
   background-color: $mainDark;
   text-align: center;
@@ -190,6 +189,8 @@ body {
   justify-content: center;
   flex-direction: column;
   z-index: -999;
+  padding-top: 230px;
+  padding-bottom: 242px;
 }
 
 .btn-question a:hover {
@@ -524,7 +525,7 @@ body {
   .question {
     margin-top: 40px;
     margin-bottom: 56px;
-    height: 520px;
+    height: 500px;
   }
 
   /* Moving text - Mobile small */
